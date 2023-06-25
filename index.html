@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Spitta Andretti Quote Machine</title>
+    <script>
+      function play(str) {
+          if (str ==="q" || str ==="Q") {
+            document.getElementById('display').innerText = "Curren$y-A_lil'_sumthin.m4a";
+          } else if (str === "w" || str === "W") {
+            document.getElementById('display').innerText = "Curren$y-All_wit_my_hands.m4a";
+          } else if (str === "e" || str === "E") {
+            document.getElementById('display').innerText = "Curren$y-Anybody.m4a";
+          } else if (str === "a" || str === "A") {
+            document.getElementById('display').innerText = "Curren$y-Billy_ocean.m4a";
+          } else if (str === "s" || str === "S") {
+            document.getElementById('display').innerText = "Curren$y-Game_for_sale.m4a";
+          } else if (str === "d" || str === "D") {
+            document.getElementById('display').innerText = "Curren$y-In_the_lot.m4a";
+          } else if (str === "z" || str === "Z") {
+            document.getElementById('display').innerText = "Curren$y-Mary.m4a";
+          } else if (str === "x" || str === "X") {
+            document.getElementById('display').innerText = "Curren$y-Night_like_this.m4a";
+          } else if (str === "c" || str === "C") {
+            document.getElementById('display').innerText = "Curren$y-Showroom.m4a";
+          }
+        var audio = document.getElementById(str);
+        audio.play();
+      }
+      window.document.onkeyup = function(event) {
+        let str = event.key
+        if (str ==="q" || str ==="Q") {
+          play("Q");
+        } else if (str === "w" || str === "W") {
+          play("W");
+        } else if (str === "e" || str === "E") {
+          play("E");
+        } else if (str === "a" || str === "A") {
+          play("A");
+        } else if (str === "s" || str === "S") {
+          play("S");
+        } else if (str === "d" || str === "D") {
+          play("D");
+        } else if (str === "z" || str === "Z") {
+          play("Z");
+        } else if (str === "x" || str === "X") {
+          play("X");
+        } else if (str === "c" || str === "C") {
+          play("C");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container" id="drum-machine">
+      <h1 class="text-center">Spitta Andretti Quote Machine</h1>
+      <div class="card my-3">
+        <div class="card-body">
+          <div class="text-center" id="display">%0%</div>
+        </div>
+      </div>
+      <button class="drum-pad btn btn-block btn-primary" id="drum-0" onClick="play('Q')">
+        Q
+      <audio src="./clip/q-Curren$y-A_lil'_sumthin.m4a" class="clip" id="Q">
+      </button>
+      <button class="drum-pad btn btn-block btn-primary" id="drum-1" onClick="play('W')">
+        W
+      <audio src="./clip/w-Curren$y-All_wit_my_hands.m4a" class="clip" id="W">
+      </button>
+      <button class="drum-pad btn btn-block btn-primary" id="drum-2" onClick="play('E')">
+        E
+      <audio src="./clip/e-Curren$y-Anybody.m4a" class="clip" id="E">
+      </button>
+      <button class="drum-pad btn btn-block btn-primary" id="drum-3" onClick="play('A')">
+        A
+      <audio src="./clip/a-Curren$y-Billy_ocean.m4a" class="clip" id="A">
+      </button>
+      <button class="drum-pad btn btn-block btn-primary" id="drum-4" onClick="play('S')">
+        S
+      <audio src="./clip/s-Curren$y-Game_for_sale.m4a" class="clip" id="S">
+      </button>
+      <button class="drum-pad btn btn-block btn-primary" id="drum-5" onClick="play('D')">
+        D
+      <audio src="./clip/d-Curren$y-In_the_lot.m4a" class="clip" id="D">
+      </button>
+      <button class="drum-pad btn btn-block btn-primary" id="drum-6" onClick="play('Z')">
+        Z
+      <audio src="./clip/z-Curren$y-Mary.m4a" class="clip" id="Z">
+      </button>
+      <button class="drum-pad btn btn-block btn-primary" id="drum-7" onClick="play('X')">
+        X
+      <audio src="./clip/x-Curren$y-Night_like_this.m4a" class="clip" id="X">
+      </button>
+      <button class="drum-pad btn btn-block btn-primary" id="drum-8" onClick="play('C')">
+        C
+      <audio src="./clip/c-Curren$y-Showroom.m4a" class="clip" id="C">
+      </button>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
